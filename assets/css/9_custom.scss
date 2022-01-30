@@ -1,0 +1,114 @@
+
+body {
+    padding: 3em 1em 3em 1em;
+    width: 100%;
+}
+
+.svg-triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 40px;
+}
+
+.svg-triangle polygon {
+    fill: #ebaf36;
+}
+
+/*
+@media only screen and (min-width: 750px) {
+    body {
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        padding-left: 200px;
+    } 
+}
+*/ 
+
+nav#TableOfContents {
+    display: none;
+}
+
+h1, nav {
+    text-transform: lowercase;
+}
+
+aside {
+    display: none;
+}
+
+
+a:hover {
+    text-decoration: underline; 
+}
+
+h1, .meta, header, footer {
+    color: #ebaf36;
+}
+
+article div.meta {
+    display: none;
+}
+
+table {
+    font-size: 90%;
+}
+
+pre {
+  margin-top: 2rem;
+  font-size: 80%; 
+  padding: 2rem;
+  overflow-x: scroll;
+  background-color: $subtle-back-color; 
+}
+
+.gist {
+    margin-top: 2rem;
+}
+
+ul#tags {
+    padding: 2rem 0;
+    margin-left: 0;
+}
+
+ul#tags {
+    display: flex;
+}
+
+ul#tags li {
+    list-style-type: none;
+    padding-right: 1em
+}
+
+figure {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#portfolio figure, #portfolio img {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#portfolio figure img {padding-right: 2em}
+
+form#form-contact input, form#form-contact textarea, form#form-contact button {
+    display: block;
+    padding: .5em;
+    margin: 1em 1em 1em 0;
+}
+
+form#form-contact input {
+    width: 55%;
+}
+
+form#form-contact textarea {
+    width: 90%;
+}
+
