@@ -8,7 +8,7 @@
     --border-color: #ebaf36;
 }
 
-header, footer { padding-top: calc( var(--line-height) * 2); }
+header, footer { padding-top: calc( var(--line-height) * 2.4); }
 aside, article div.meta { display: none; }
 
 .svg-triangle {
