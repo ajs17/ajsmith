@@ -5,7 +5,7 @@ weight: 2
 mainid: "portfolio"
 ---
 
-A summary of a few of my more consequential endeavors of the past decade.
+A summary of selected projects from the past decade.
 
 ## Mitime
 
@@ -57,7 +57,7 @@ In this partnership, my primary contributions were product development and manuf
 
 ### Web site
 
-Complete marketing and ECommerce solution using a responsive Wordpress site with WooCommerce and Shipstation among other integrations. 
+Complete marketing and e-commerce solution using a responsive Wordpress site with WooCommerce and Shipstation among other integrations. 
 
 {{< figure src="images/sm/website.jpg" width="800" class="image" >}}
 
@@ -85,9 +85,11 @@ Smith and Mason products were sold at Narrative Space in Ithaca, New York and Go
 
 ## Finger Lakes Beer Trail (archived)
 
-Finger Lakes Beer Trail Marketing and Tourism Associates, LLC. promoted the craft breweries and related businesses in the greater Finger Lakes region of upstate New York through a marketing platform that included print, broadcast and online/social media channels as well as in person events. Along with Watkins Glen International, the Finger Lakes Beer Trail helped organize and sponsor the first three years of the Finger Lakes Craft Beer festival.
+Finger Lakes Beer Trail Marketing and Tourism Associates, LLC. promoted the craft breweries and related businesses in the greater Finger Lakes region of upstate New York through a marketing platform that included print, broadcast and online/social media channels as well as in person events. 
 
-My main responsibilities included print, broadcast and online marketing including print and digital graphic design and copy, event planning, promotion, and management as well as coding and bookkeeping.
+Along with Watkins Glen International, the Finger Lakes Beer Trail helped organize and sponsor the first three years of the Finger Lakes Craft Beer Festival. The Finger Lakes Beer Trail won the 2013 Tompkins County Signs of Sustainability Award.
+
+My main responsibilities included print, broadcast (TV and radio) and online marketing including print and digital graphic design and copy, event planning, promotion, and management as well as coding and bookkeeping.
 
 ### Web site
 
@@ -97,7 +99,7 @@ Self-hosted, responsive Wordpress site using custom plugins for location and eve
 
 ### Large-format multi-fold brochures
 
-Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. 
+Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. The design of the 2015-2016 edition was coordinated with the updated website design that same year. 
 
 <div class="cols">
     {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="250" class="image" >}} 
