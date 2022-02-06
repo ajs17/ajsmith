@@ -85,7 +85,7 @@ Smith and Mason products were sold at Narrative Space in Ithaca, New York and Go
 
 ## Finger Lakes Beer Trail (archived)
 
-Finger Lakes Beer Trail Marketing and Tourism Associates, LLC. promoted the craft breweries and related businesses in the greater Finger Lakes region of upstate New York though a marketing platform that included print, broadcast and online/social media channels as well as in person events. Along with Watkins Glen International, the Finger Lakes Beer Trail helped organize and sponsor the first three years of the Finger Lakes Craft Beer festival.
+Finger Lakes Beer Trail Marketing and Tourism Associates, LLC. promoted the craft breweries and related businesses in the greater Finger Lakes region of upstate New York through a marketing platform that included print, broadcast and online/social media channels as well as in person events. Along with Watkins Glen International, the Finger Lakes Beer Trail helped organize and sponsor the first three years of the Finger Lakes Craft Beer festival.
 
 My main responsibilities included print, broadcast and online marketing including print and digital graphic design and copy, event planning, promotion, and management as well as coding and bookkeeping.
 
