@@ -1,0 +1,34 @@
+
+:root {
+    --background-color: #554b45;
+    --background-color2: #6b5952;
+    --color: #d1c5be;
+    --active-link-color: #ebaf36;
+    --visited-link-color: #ba934c;
+    --border-color: #ebaf36;
+}
+
+header, footer { padding-top: calc( var(--line-height) * 2); }
+aside, article div.meta { display: none; }
+
+.svg-triangle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: calc( var(--line-height) * 2); 
+}
+.svg-triangle polygon { fill: var(--active-link-color); }
+
+h1, h2, h3, nav 
+h1, h2, h3, h4,
+header, nav, footer,
+.meta { 
+    color: #ebaf36;
+    text-transform: lowercase; 
+}
+
+figure.image { margin-bottom: calc( var(--line-height) * 1); }
+.cols figure.image { margin-bottom: 0; }
+

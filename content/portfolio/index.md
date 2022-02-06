@@ -5,28 +5,30 @@ weight: 2
 mainid: "portfolio"
 ---
 
-A summary of a few of more consequential endeavors of the past decade.
+A summary of a few of my more consequential endeavors of the past decade.
 
 ## Mitime
 
 [thisismitime.com](http://thisismitime.com) 
 
-Mitime is a concept for a "minimal time metastructure" to organize time more effectively. My original concept, design, coding and copy.
+Mitime (pronounced "my time") is a minimal metastructure mapped over standard time that counts down available time in a day to organize time more effectively. My original concept, design, coding and copy.
 
 Responsive Hugo site hosted on Github pages with custom Hugo modules that use Javascript to dynamically manipulate SVG images.
 
 Desktop home page (the theme switches to a dark background during certain times of the day): 
 
-{{< figure src="images/mitime/home-desktop.png" width="800" >}}
+{{< figure src="images/mitime/home-desktop.png" width="800" class="image" >}}
 
-<div class="gallery" style="align-items: start; padding-top: 2rem">
+<br/>
+
+<div class="cols">
     <div>
-        Mobile home:
-        {{< figure src="images/mitime/home-mobile.png" >}}
+        <p>Mobile home:</p>
+        {{< figure src="images/mitime/home-mobile.png" width="390" class="image" >}}
     </div>
     <div>
-        Inner pages:
-        {{< figure src="images/mitime/inner-desktop.png" >}}
+        <p>Inner pages:</p>
+        {{< figure src="images/mitime/inner-desktop.png" width="390" class="image" >}}
     </div>
 </div>
 
@@ -38,16 +40,18 @@ My original historical research into the family of Edward H. Mills of Brooktonda
 
 A responsive Hugo website hosted on Github pages and based on a custom SASS base theme.
 
-{{< figure src="images/memills/screenshot.jpg" width="800" >}}
+{{< figure src="images/memills/screenshot.jpg" width="800" class="cols image" >}}
 
-<div class="gallery" style="align-items: start">
-    {{< figure src="images/memills/screenshot-inner2.jpg" width="390" >}}
-    {{< figure src="images/memills/screenshot-inner.jpg" width="390" >}}
+<div class="cols">
+    {{< figure src="images/memills/screenshot-inner2.jpg" width="390" class="image" >}}
+    {{< figure src="images/memills/screenshot-inner.jpg" width="390" class="image" >}}
 </div>
+
+<br/>
 
 ## Smith and Mason (archived)
 
-Boutique men's personal care products based on recipes I created. 
+Boutique men's personal care products based on my personal formulations.
 
 In this partnership, my primary contributions were product development and manufacturing, test marketing, supply chain and inventory management, bookkeeping and accounting, online and print graphic design and copy (including marketing materials as well as product labels), website coding.
 
@@ -55,27 +59,29 @@ In this partnership, my primary contributions were product development and manuf
 
 Complete marketing and ECommerce solution using a responsive Wordpress site with WooCommerce and Shipstation among other integrations. 
 
-{{< figure src="images/sm/website.jpg" width="800" >}}
+{{< figure src="images/sm/website.jpg" width="800" class="image" >}}
 
 ### Product promotional images
 
-{{< figure src="images/sm/gift-set2.jpg" width="800" >}}
-{{< figure src="images/sm/brush-comb.jpg" width="800" >}}
+{{< figure src="images/sm/gift-set2.jpg" width="800" class="image" >}}
+{{< figure src="images/sm/brush-comb.jpg" width="800" class="image" >}}
 
 ### Local retail placement
 
 Smith and Mason products were sold at Narrative Space in Ithaca, New York and Goat Boy in Owego, New York.
 
-<div class="gallery" style="align-items: end">
-    {{< figure src="images/sm/narrative-space.jpg" width="390" >}}
-    {{< figure src="images/sm/narrative-space2.jpg" width="390" >}}
+{{< figure src="images/sm/goat-boy.jpg" width="800" class="image" >}}
+
+<div class="cols">
+    {{< figure src="images/sm/narrative-space.jpg" width="390" class="image" >}}
+    {{< figure src="images/sm/narrative-space2.jpg" width="390" class="image" >}}
 </div>
 
-{{< figure src="images/sm/goat-boy.jpg" width="800" >}}
+<br/>
 
 ### Retail promotional display
 
-{{< figure src="images/sm/retail-poster.jpg" width="800" >}}
+{{< figure src="images/sm/retail-poster.jpg" width="800" class="image" >}}
 
 ## Finger Lakes Beer Trail (archived)
 
@@ -87,23 +93,24 @@ My main responsibilities included print, broadcast and online marketing includin
 
 Self-hosted, responsive Wordpress site using custom plugins for location and event data. An earlier version of the website was done in Drupal with similar custom modules. 
 
-{{< figure src="images/beer-trail/website.png" width="800">}} 
+{{< figure src="images/beer-trail/website.png" width="800" class="image" >}} 
 
 ### Large-format multi-fold brochures
 
 Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. 
 
-<div class="gallery">
-    {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="250" >}} 
-    {{< figure src="images/beer-trail/beer-trail-map-2015-2016.jpg" width="250" >}} 
-    {{< figure src="images/beer-trail/beer-trail-map-2016-2017.jpg" width="250" >}}
+<div class="cols">
+    {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="250" class="image" >}} 
+    {{< figure src="images/beer-trail/beer-trail-map-2015-2016.jpg" width="250" class="image" >}} 
+    {{< figure src="images/beer-trail/beer-trail-map-2016-2017.jpg" width="250" class="image" >}}
 </div>
 
+<br/>
 
 ### Other selected promotions
 
-<div class="gallery">
-    {{< figure src="images/beer-trail/craft-beer-week.jpg" width="390" >}} 
-    {{< figure src="images/beer-trail/passport.jpg" width="390" >}} 
+<div class="cols">
+    {{< figure src="images/beer-trail/craft-beer-week.jpg" width="390" class="image" >}} 
+    {{< figure src="images/beer-trail/passport.jpg" width="390" class="image" >}} 
 </div>
 
