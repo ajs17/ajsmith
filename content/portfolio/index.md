@@ -43,8 +43,7 @@ A responsive Hugo website hosted on Github pages and based on a custom SASS base
 {{< figure src="images/memills/screenshot.jpg" width="800" class="cols image" >}}
 
 <div class="cols">
-    {{< figure src="images/memills/screenshot-inner2.jpg" width="390" class="image" >}}
-    {{< figure src="images/memills/screenshot-inner.jpg" width="390" class="image" >}}
+    {{< figure src="images/memills/screenshot-inner2.jpg" width="800" class="image" >}}
 </div>
 
 <br/>
