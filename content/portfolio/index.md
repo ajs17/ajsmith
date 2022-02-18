@@ -88,7 +88,7 @@ Finger Lakes Beer Trail Marketing and Tourism Associates, LLC. promoted the craf
 
 Along with Watkins Glen International, the Finger Lakes Beer Trail helped organize and sponsor the first three years of the Finger Lakes Craft Beer Festival. The Finger Lakes Beer Trail won the 2011 Tompkins County Signs of Sustainability Award.
 
-My main responsibilities included print, broadcast (TV and radio) and online marketing including print and digital graphic design and copy, event planning, promotion, and management as well as coding and bookkeeping.
+My main responsibilities included print, broadcast (TV and radio) and online marketing including print and digital graphic design and copy, event/program planning, promotion, and management as well as coding and bookkeeping.
 
 ### Web site
 
@@ -98,7 +98,7 @@ Self-hosted, responsive Wordpress site using custom plugins for location and eve
 
 ### Large-format multi-fold brochures
 
-Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. The design of the 2015-2016 edition was coordinated with the updated website design that same year. 
+Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. The design of the 2015-2016 edition of the brochure was coordinated with the launch of a completely re-implemented website with an updated responsive design (migrating from Drupal to Wordpress) as well as the introduction of an updated Beer Trail logo that same year. 
 
 <div class="cols">
     {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="250" class="image" >}} 
