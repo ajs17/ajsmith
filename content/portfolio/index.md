@@ -13,7 +13,7 @@ A summary of selected projects from the past decade.
 
 Mitime (pronounced "my time") is a minimal metastructure mapped over standard time that counts down available time in a day to organize time more effectively. My original concept, design, coding and copy.
 
-Responsive Hugo site hosted on Github pages with custom Hugo modules that use Javascript to dynamically manipulate SVG images.
+Responsive Hugo site hosted on Github Pages with custom Hugo modules that use Javascript to dynamically manipulate SVG images.
 
 Desktop home page (the theme switches to a dark background during certain times of the day): 
 
@@ -38,7 +38,7 @@ Desktop home page (the theme switches to a dark background during certain times 
 
 My original historical research into the family of Edward H. Mills of Brooktondale New York. My design, coding and copy.
 
-A responsive Hugo website hosted on Github pages and based on a custom SASS base theme.
+A responsive Hugo website hosted on Github Pages and based on a custom SASS base theme.
 
 {{< figure src="images/memills/screenshot.jpg" width="800" class="cols image" >}}
 
