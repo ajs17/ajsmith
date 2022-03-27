@@ -19,19 +19,6 @@ Desktop home page (the theme switches to a dark background during certain times 
 
 {{< figure src="images/mitime/home-desktop.png" width="800" class="image" >}}
 
-<br/>
-
-<div class="cols">
-    <div>
-        <p>Mobile home:</p>
-        {{< figure src="images/mitime/home-mobile.png" width="390" class="image" >}}
-    </div>
-    <div>
-        <p>Inner pages:</p>
-        {{< figure src="images/mitime/inner-desktop.png" width="390" class="image" >}}
-    </div>
-</div>
-
 ## M. E. Mills (in development)
  
 [memills.com](http://memills.com)
