@@ -1,0 +1,117 @@
+<!-- backup of https://jsfiddle.net/asmith607/c4pyzgaq/469/ --> 
+
+<form>
+  <label for="quaddress">Quaddress:</label>
+  <input type="text" id="quaddress" maxlength="4">
+  <button id="submit">Locate</button>
+</form>
+<div id="svgcontainer"></div>
+
+<script>
+function buildDimTable(map_px, dims) {
+
+  const base_square = {};
+  base_square.xcoord = 0;
+  base_square.ycoord = 0;
+  base_square.size_px = map_px;
+  base_square.quaddress = "";
+  base_square.border = 0;
+
+  var dim_table = [];
+  dim_table[0] = [base_square];
+
+  var ORDER = 2;
+  var border_scale = [8, 5, 3, 1];
+
+  for (var dim_index = 0; dim_index < dims; dim_index += 1) {
+
+    var new_quads = [];
+    var dim = dim_index + 1;
+
+    dim_table[dim_index].forEach(container_quad => {
+      for (var quad_index = 0; quad_index < 4; quad_index += 1) {
+        var quad_num = quad_index + 1;
+
+        const new_quad = {};
+        new_quad.size_px = container_quad.size_px / ORDER;
+        new_quad.xcoord = container_quad.xcoord
+        new_quad.ycoord = container_quad.ycoord
+        new_quad.border = border_scale[dim_index];
+        if ((quad_num % ORDER) == 0) {
+          new_quad.xcoord = new_quad.xcoord + new_quad.size_px;
+        }
+        if (quad_num > ORDER) {
+          new_quad.ycoord = new_quad.ycoord + new_quad.size_px;
+        }
+        new_quad.quaddress = "" + container_quad.quaddress + quad_num;
+        new_quads.push(new_quad);
+
+      }
+    })
+    dim_table[dim] = new_quads;
+  }
+  return dim_table;
+}
+
+function drawGrid(dim_table, map_px, svgcontainername, dims, quaddress) {
+
+  var container = document.querySelector(svgcontainername);
+
+  // remove any previous paths and add a new one
+  var svgs = container.getElementsByTagName("svg");
+  for (var i = 0; i < svgs.length; i++) {
+    svgs[i].remove();
+  }
+
+  var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttributeNS("http://www.w3.org/2000/xmlns/", "xmlns:xlink", "http://www.w3.org/1999/xlink");
+  svg.setAttribute('width', map_px);
+  svg.setAttribute('height', map_px);
+
+  for (var dim_index = 0; dim_index < dims; dim_index += 1) {
+    var dim = dim_index + 1;
+    var group = document.createElementNS("http://www.w3.org/2000/svg", "g");
+    group.setAttribute("id", "" + dim);
+    quad_num = 0;
+    dim_table[dim].forEach(quad => {
+      quad_num += 1;
+      var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+      rect.setAttribute("x", quad.xcoord);
+      rect.setAttribute("y", quad.ycoord);
+      rect.setAttribute("width", quad.size_px);
+      rect.setAttribute("height", quad.size_px);
+      rect.setAttribute("stroke", "black");
+      rect.setAttribute("stroke-width", quad.border);
+      var fill = "gray";
+      if (quad.quaddress == quaddress) {
+        fill = "gainsboro";
+      }
+      rect.setAttribute('fill', fill);
+      group.appendChild(rect);
+    })
+    svg.appendChild(group);
+  }
+
+  container.appendChild(svg);
+}
+
+var map_px = 500;
+var svgcontainername = "#svgcontainer";
+
+document.getElementById("submit").onclick = function() {
+
+  var quaddress = document.getElementById("quaddress").value;
+
+  quaddress = quaddress.trim();
+  var dims = quaddress.length;
+  max_dims = 4;
+  if (dims > max_dims) {
+    quaddress = quaddress.substring(0, max_dims);
+    dims = max_dims;
+  }
+
+  var dim_table = buildDimTable(map_px, dims);
+  drawGrid(dim_table, map_px, svgcontainername, dims, quaddress);
+  return false;
+}
+</script>
