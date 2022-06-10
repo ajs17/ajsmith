@@ -54,7 +54,9 @@ Quaddresses in citations may be abbreviated as in the following real-world examp
 — 11 Nov 1937, "In Tribute to Emily Mills", The Ithaca Journal, Ithaca NY, p2, q212, newspapers.com.
 </figure>
 
-As with my approach to [mitime](http://thisismitime.com), I intentionally sacrifice precision for simplicity. After all, what I am trying to accomplish is to simply and intuitively guide the person back to the approximate starting position of the content in the original document, at which point human judgement is aided adequately enough to quickly locate the content in context. 
+This approach is simple and leverages the natural human ability to accurately estimate halves (and thus quarters), even of asymmetrical shapes. It should be noted that many documents and artifacts are themselves based on implicit grids, such as columns in a newspaper, streets on a map, and even the composition of photographs.
+
+As with my approach to [mitime](http://thisismitime.com), I intentionally sacrifice precision for simplicity to increase efficiency. After all, what I am trying to accomplish is to intuitively guide the person back to the approximate starting position of the content in the original document, at which point human judgement is aided adequately enough to quickly locate the content in context. 
 
 High precision is not needed and for human actors, makes both the metadata encoding and location resolution counter-productively complex. This approach is more efficient because it simply seeks to enhance human judgement rather than get in its way.
 
@@ -69,7 +71,14 @@ collection1.image1.quaddress = "43";
 collection1.image2.quaddress = "4321";
 </code></pre>
 
-This also illustrates that the length of the quaddress itself implies the number of divisions applied.
+And so it should be clear that quaddresses of different levels of specificity can be combined in multiple references to the same original as the relative proportions of the areas being referenced warrant it:
+
+<pre><code>
+collection1.image1.quaddress1 = "43";
+collection1.image1.quaddress2 = "4321";
+</code></pre>
+
+This also illustrates that the length of the quaddress itself implies the number of divisions applied, and therefore, the relative size of the individual quaddress.
 
 And similarly, different grids can be applied to derivatives as well, such as specifying a location within an photo within a page. The photo would have its quaddress within the page, probably at a low specificity, and then a derivative image of the photo would have its own quaddress, possibly having a greater specificity. 
 
