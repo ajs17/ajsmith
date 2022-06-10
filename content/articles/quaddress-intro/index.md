@@ -8,7 +8,7 @@ tags:
 - metadata 
 ---
 
-Quaddressing provides an intuitive and consistent way to make relative spatial references to an original, two dimensional artifact (primarily for documents such as a printed text, photographs, etc.) regardless of its size or shape, or whether the artifact is physical or digital. Quaddressing relies on imprecision to aid human judgement instead of relying on highly specific measurements of varying units across different types of documents, thereby greatly increasing the ease and efficiency of both encoding and interpretation across all documents. 
+Quaddressing provides an intuitive and consistent way to make relative spatial references to an original, two dimensional artifact (primarily for documents such as a printed text, photographs, etc.) regardless of its size or shape, or whether the artifact is physical or digital. Quaddressing relies on imprecision to aid human judgement instead of relying on highly specific measurements of varying units across different types of documents, thereby greatly increasing the ease and efficiency of both encoding and interpretation across all documents for both human actors and code. 
 
 <!--more-->
 
@@ -112,6 +112,6 @@ The following is a live demo illustrating quaddresses. For practical reasons, I 
  
 {{< embed-fiddle "//jsfiddle.net/asmith607/c4pyzgaq/468/embed/result,js,html,css/" >}}
 
-I believe that in most cases, two divisions are ideal to approximate locations and resolve quaddresses quickly. Three divisions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human consumers.
+I believe that in most cases, two divisions are ideal to approximate locations and resolve quaddresses quickly. Three divisions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human actors.
 
 
