@@ -56,7 +56,7 @@ Quaddresses in citations may be abbreviated as in the following real-world examp
 
 As with my approach to [mitime](http://thisismitime.com), I intentionally sacrifice precision for simplicity. After all, what I am trying to accomplish is to simply and intuitively guide the person back to the approximate starting position of the content in the original document, at which point human judgement is aided adequately enough to quickly locate the content in context. 
 
-High precision is not needed and in fact would not only make encoding the metadata much more complicated, but the added complexity would actually make it much harder to interpret metadata and resolve the location. This approach is more efficient because it simply seeks to enhance human judgement rather than get in its way.
+High precision is not needed and would not only make encoding the metadata much more complicated, but the added complexity would actually make it much harder to interpret metadata and resolve the location. This approach is more efficient because it simply seeks to enhance human judgement rather than get in its way.
 
 So, as a general rule, Use the lowest level of specificity necessary to achieve the desired goal, as adding more divisions adds quickly to encoding complexity with quickly diminishing efficiency for the consumer, becoming counterproductive. In many cases, one or two divisions are sufficient, as again, we are only looking to aid human judgement by locating the content approximately.
 
