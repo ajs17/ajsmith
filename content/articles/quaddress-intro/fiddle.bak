@@ -1,3 +1,4 @@
+     
 <!-- backup of https://jsfiddle.net/asmith607/c4pyzgaq/469/ --> 
 
 <form>
@@ -8,7 +9,7 @@
 <div id="svgcontainer"></div>
 
 <script>
-function buildDimTable(map_px, dims) {
+function buildDivTable(map_px, divs) {
 
   const base_square = {};
   base_square.xcoord = 0;
@@ -17,18 +18,18 @@ function buildDimTable(map_px, dims) {
   base_square.quaddress = "";
   base_square.border = 0;
 
-  var dim_table = [];
-  dim_table[0] = [base_square];
+  var div_table = [];
+  div_table[0] = [base_square];
 
   var ORDER = 2;
   var border_scale = [8, 5, 3, 1];
 
-  for (var dim_index = 0; dim_index < dims; dim_index += 1) {
+  for (var div_index = 0; div_index < divs; div_index += 1) {
 
     var new_quads = [];
-    var dim = dim_index + 1;
+    var div = div_index + 1;
 
-    dim_table[dim_index].forEach(container_quad => {
+    div_table[div_index].forEach(container_quad => {
       for (var quad_index = 0; quad_index < 4; quad_index += 1) {
         var quad_num = quad_index + 1;
 
@@ -36,7 +37,7 @@ function buildDimTable(map_px, dims) {
         new_quad.size_px = container_quad.size_px / ORDER;
         new_quad.xcoord = container_quad.xcoord
         new_quad.ycoord = container_quad.ycoord
-        new_quad.border = border_scale[dim_index];
+        new_quad.border = border_scale[div_index];
         if ((quad_num % ORDER) == 0) {
           new_quad.xcoord = new_quad.xcoord + new_quad.size_px;
         }
@@ -48,12 +49,12 @@ function buildDimTable(map_px, dims) {
 
       }
     })
-    dim_table[dim] = new_quads;
+    div_table[div] = new_quads;
   }
-  return dim_table;
+  return div_table;
 }
 
-function drawGrid(dim_table, map_px, svgcontainername, dims, quaddress) {
+function drawGrid(div_table, map_px, svgcontainername, divs, quaddress) {
 
   var container = document.querySelector(svgcontainername);
 
@@ -68,12 +69,12 @@ function drawGrid(dim_table, map_px, svgcontainername, dims, quaddress) {
   svg.setAttribute('width', map_px);
   svg.setAttribute('height', map_px);
 
-  for (var dim_index = 0; dim_index < dims; dim_index += 1) {
-    var dim = dim_index + 1;
+  for (var div_index = 0; div_index < divs; div_index += 1) {
+    var div = div_index + 1;
     var group = document.createElementNS("http://www.w3.org/2000/svg", "g");
-    group.setAttribute("id", "" + dim);
+    group.setAttribute("id", "" + div);
     quad_num = 0;
-    dim_table[dim].forEach(quad => {
+    div_table[div].forEach(quad => {
       quad_num += 1;
       var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
       rect.setAttribute("x", quad.xcoord);
@@ -103,15 +104,15 @@ document.getElementById("submit").onclick = function() {
   var quaddress = document.getElementById("quaddress").value;
 
   quaddress = quaddress.trim();
-  var dims = quaddress.length;
-  max_dims = 4;
-  if (dims > max_dims) {
-    quaddress = quaddress.substring(0, max_dims);
-    dims = max_dims;
+  var divs = quaddress.length;
+  max_divs = 4;
+  if (divs > max_divs) {
+    quaddress = quaddress.substring(0, max_divs);
+    divs = max_divs;
   }
 
-  var dim_table = buildDimTable(map_px, dims);
-  drawGrid(dim_table, map_px, svgcontainername, dims, quaddress);
+  var div_table = buildDivTable(map_px, divs);
+  drawGrid(div_table, map_px, svgcontainername, divs, quaddress);
   return false;
 }
 </script>

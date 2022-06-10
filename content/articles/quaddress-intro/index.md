@@ -110,7 +110,7 @@ image.quadranges = "14-34,22-44";
 
 The following is a live demo illustrating quaddresses. For practical reasons, I have limited the demo to a maximum of four divisions:
  
-{{< embed-fiddle "//jsfiddle.net/asmith607/c4pyzgaq/468/embed/result,js,html,css/" >}}
+{{< embed-fiddle "//jsfiddle.net/asmith607/c4pyzgaq/482/embed/result,js,html,css/" >}}
 
 I believe that in most cases, two divisions are ideal to approximate locations and resolve quaddresses quickly. Three divisions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human actors.
 
