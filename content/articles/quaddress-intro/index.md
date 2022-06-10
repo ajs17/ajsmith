@@ -20,25 +20,25 @@ Often while doing historical research and publishing my findings, I capture and 
 
 In each of these cases, much of the context of the original and the relationship of the part to the whole is missing, at least to some degree. It is one of my fundamental goals to assist people in discovering, accessing, and understanding the original documents, whether physical or digital. To that end, I have been experimenting with an approach that would allow me to simply and easily add metadata to individual images that would provide an intuitive way to guide people back to their positions in the original documents. 
 
-My approach is to map quadrants onto the original and reference those quadrants in the metadata, beginning with the simplest case:
+My approach is to use a simple addressing system that can be applied uniformly regardless of the size or shape of a document, or whether it is print or digital. The approach scales depending on individual needs and can be easily and efficiently encoded and decoded, by both humans and code. I call this addressing system quaddressing.
+
+Beginning with the negative use case: if a derivative represents the entire area of the original, its quaddress is "0". To specify an area within the document, simply divide the current division into quadrants, beginning with the entire area: 
 
 <figure class="image"> 
 {{< inline-svg "/img/quaddress/1d-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
-As with my approach to [mitime](http://thisismitime.com), I intentionally sacrifice precision for simplicity. After all, what I am trying to accomplish is to simply and intuitively guide the person back to the approximate starting position of the content in the original, at which point human judgement is aided adequately enough to quickly locate the content in context. Higher precision is not needed and in fact would not only make encoding the metadata much more complicated, but the added complexity would actually make it much harder to interpret the metadata and resolve the location. This approach is more efficient because it simply seeks to enhance human judgement rather than get in its way.
-
-If greater specificity is genuinely needed, additional "dimensions" can be added, by dividing each quadrant in the current highest dimension into additional quadrants, thus creating a new highest dimension:
+As greater specificity is needed, divide each quadrant in the current/highest division into additional quadrants, thus creating a new current/highest division:
 
 <figure class="image"> 
 {{< inline-svg "/img/quaddress/2d-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
-The original quadrants are shown by the major grid, the added dimension by the minor grid. 
+The original quadrants are shown by the major grid, the added division by the minor grid.
 
-This approach provides a clear and consistent method for achieving greater specificity by adding an arbitrary number of dimensions that can then be referenced in the metadata with an arbitrarily long string of integers:
+This approach provides a clear and consistent method for achieving greater specificity by adding an arbitrary number of divisions that can then be referenced in the metadata with an arbitrarily long string of integers:
  
 <pre><code>
 image.quaddress = "43";
@@ -48,22 +48,32 @@ image.quaddress = "43";
 <figcaption></figcaption>
 </figure> 
 
-But again, one should use the lowest level of specificity necessary to achieve the desired goal, as adding more dimensions adds greatly to encoding complexity with quickly diminishing efficiency for the consumer, and possibly even being counterproductive. In many cases, one or two dimensions are sufficient, as again, we are only looking to aid human judgement by locating the content approximately.
+Quaddresses in citations may be abbreviated as in the following real-world example:
 
-There may be times when greater specificity may be genuinely needed, such as very large, or very detailed originals from which multiple derivatives are created. The approach for implementing and interpreting quaddresses is the same regardless of how many dimensions are used.
+<figure>
+— 11 Nov 1937, "In Tribute to Emily Mills", The Ithaca Journal, Ithaca NY, p2, q212, newspapers.com.
+</figure>
 
-Note too that this approach is compatible with mixed levels of specificity on a per-item basis as needed. For example, given a collection of otherwise related images, one could decide to use one or two dimensions for most derivatives while specifying higher dimensions on other images as needed. There is no reason to do an up-front review of data to decide the highest level of specificity likely to be needed across a collection, or in a publication, instead use mixed levels of specificity, only using higher dimensions when absolutely necessary.
+As with my approach to [mitime](http://thisismitime.com), I intentionally sacrifice precision for simplicity. After all, what I am trying to accomplish is to simply and intuitively guide the person back to the approximate starting position of the content in the original document, at which point human judgement is aided adequately enough to quickly locate the content in context. 
+
+High precision is not needed and in fact would not only make encoding the metadata much more complicated, but the added complexity would actually make it much harder to interpret metadata and resolve the location. This approach is more efficient because it simply seeks to enhance human judgement rather than get in its way.
+
+So, as a general rule, Use the lowest level of specificity necessary to achieve the desired goal, as adding more divisions adds quickly to encoding complexity with quickly diminishing efficiency for the consumer, becoming counterproductive. In many cases, one or two divisions are sufficient, as again, we are only looking to aid human judgement by locating the content approximately.
+
+There may be times when greater specificity may be genuinely needed, such as very large, or very detailed originals from which multiple derivatives are created. The approach for implementing and interpreting quaddresses is the same regardless of how many divisions are used.
+
+Note too that this approach is compatible with mixed levels of specificity on a per-item basis as needed. For example, given a collection of otherwise related images, one could decide to use one or two divisions for most derivatives while specifying higher divisions on other images as needed. There is no reason to do an up-front review of data to decide the highest level of specificity likely to be needed across a collection, or in a publication, instead use mixed levels of specificity, only using higher divisions when absolutely necessary.
 
 <pre><code>
 collection1.image1.quaddress = "43";
 collection1.image2.quaddress = "4321";
 </code></pre>
 
-This also illustrates that the length of the quaddress itself implies the number of dimensions being used.
+This also illustrates that the length of the quaddress itself implies the number of divisions applied.
 
 And similarly, different grids can be applied to derivatives as well, such as specifying a location within an photo within a page. The photo would have its quaddress within the page, probably at a low specificity, and then a derivative image of the photo would have its own quaddress, possibly having a greater specificity. 
 
-Obviously, many originals will not be perfectly square, and it is important to remember that this approach is purposely an abstraction of a map, and a map is never the territory. To interpret the quaddress against say, an 11x17 sheet a paper, the consumer can easily make the adjustment because division by quadrants only requires accurately judging the approximate midpoints along an X and Y axis for an area, something that is very natural for everyone.
+Obviously, many originals will not be perfectly square, and it is important to remember that this approach is purposely an abstraction of a map, and a map is never the territory. To interpret a quaddress against say, an 11x17 sheet a paper, the consumer can easily make the adjustment because division by quadrants only requires accurately judging the approximate midpoints along an X and Y axis for an area, something that is very natural for everyone.
 
 <figure class="image"> 
 {{< inline-svg "/img/quaddress/2d-stretched-grid.svg" >}}
@@ -77,9 +87,9 @@ The same can be said of non-rectilinear originals. As long as the grid is imagin
 <figcaption></figcaption>
 </figure> 
 
-The shape of the original artifact is one factor to consider when deciding to include higher dimensions.
+The shape of the original artifact is one factor to consider when deciding to include higher divisions.
 
-In my use cases, such as referencing text within an article on a newspaper page, I only need to specify the approximate starting point of the content. Nothing is gained by, for example, trying to encode the overall area the derivative image occupies. However, other use cases such as this can be very straightforwardly accommodated, as shown in these two dimensional grid examples:
+In my use cases, such as referencing text within an article on a newspaper page, I only need to specify the approximate starting point of the content. Nothing is gained by, for example, trying to encode the overall area the derivative image occupies. However, this use case and others can be very straightforwardly accommodated, as shown in these two divisional grid examples:
 
 <pre><code>
 # a single quadrant address, already discussed
@@ -98,10 +108,10 @@ image.quadranges = "14-34,22-44";
 # etc.
 </code></pre>
 
-The following is a live demo illustrating quaddresses. For practical reasons, I have limited the demo to a maximum of four dimensions:
+The following is a live demo illustrating quaddresses. For practical reasons, I have limited the demo to a maximum of four divisions:
  
 {{< embed-fiddle "//jsfiddle.net/asmith607/c4pyzgaq/468/embed/result,js,html,css/" >}}
 
-I believe that in most cases, two dimensions are ideal to approximate locations and resolve quaddresses quickly. Three dimensions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human consumers.
+I believe that in most cases, two divisions are ideal to approximate locations and resolve quaddresses quickly. Three divisions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human consumers.
 
 
