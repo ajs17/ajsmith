@@ -15,9 +15,9 @@ lastmod = [":fileModTime", ":default"] # auto populates lastmod date
   analyticsid = ""
   additionalmetatags = "<meta name=\"msvalidate.01\" content=\"\" />" 
   humanDateFormat = "Monday 02 Jan 2006"
-  contactformEndpoint = "https://app.99inbound.com/api/e/1a-dfbvP" 
-  contactformAntispam = "<div style=\"position: absolute; left: -5000px;\"> <input type=\"checkbox\" name=\"grandmas_red_glossy_housecat\" value=\"1\" tabindex=\"-1\" autocomplete=\"no\"> </div>"
-
+  contactformEndpoint = "https://submit-form.com/TMzsthUG"
+  contactformAdditionalCode= "<input type=\"hidden\" name=\"_redirect\" value=\"https://ajsmith.co/thankyou\"/>"
+  botpoisonPublicKey = "pk_ceb1f068-0be7-467b-b9c5-3c722f2d4627" 
 # another possible color scheme: 493829/eb8f0c
 # also see internalpointers.com
 

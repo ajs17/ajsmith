@@ -1,7 +1,6 @@
 ---
 title: "spatially mapping derivative content to original documents"
-date: 
-draft: false
+date: 2022-06-01  
 tags:
 - historical-research
 - digitization

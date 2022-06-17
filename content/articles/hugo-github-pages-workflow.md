@@ -1,8 +1,7 @@
 ---
 title: "my process for creating new Hugo sites"
-date: 
-draft: false
 summary: "My current documentation, in bash code, for creating a new Hugo site hosted on Github pages."
+date: 2022-05-01 
 tags:
 - bash
 - hugo
