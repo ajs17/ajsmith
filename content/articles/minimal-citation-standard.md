@@ -1,3 +1,9 @@
+---
+title: "citation standards"
+date: 
+draft: true
+---
+
 I have always been annoyed with existing citation standards that are arcane and arbitrary to the degree that you either need to check back against templates for each content type, or use some software tool that enforces its own structure on your citation to hide the complexity of the ultimate output.  
 
 Is it possible to come up with a citation formatting standard that optimally balances this matrix of competing goals:

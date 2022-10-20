@@ -1,4 +1,8 @@
-
+---
+title: "page numbers as content"
+date: 
+draft: true
+---
 
 Page numbers are typically thought of as metadata, after all, they look like metadata, and they appear to describe the structure of the document. When reading a novel, for example, we don't think of the page numbers as being part of the prose we paid to read.
 
