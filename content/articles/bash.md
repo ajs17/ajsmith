@@ -1,4 +1,3 @@
-
 ---
 title: "bash"
 date: 

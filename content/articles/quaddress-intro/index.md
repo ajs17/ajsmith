@@ -122,4 +122,4 @@ The following is a live demo illustrating quaddresses. For practical reasons, I 
 
 I believe that in most cases, two divisions are ideal to approximate locations and resolve quaddresses quickly. Three divisions is still manageable, but beyond that, resolving quaddresses starts becoming challenging and inefficient for human actors.
 
-Notice that by their nature, quaddresses are numerically sortable, and if the number of reference divisions is constant, or alternately, the number is zero-padded, quaddresses are sortable lexicographically.
+Notice that by their nature, quaddresses are sortable numerically, and if the number of reference divisions is constant, or alternately, the number is zero-padded, quaddresses are sortable lexicographically.
