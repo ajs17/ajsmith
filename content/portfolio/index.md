@@ -9,7 +9,8 @@ A summary of selected projects from the past decade.
 
 ## Mitime
 
-[thisismitime.com](http://thisismitime.com) 
+[thisismitime.com](http://thisismitime.com)<br> 
+https://github.com/ajs17/thisismitime
 
 Mitime (pronounced "my time") is a minimal metastructure mapped over standard time that counts down available time in a day to organize time more effectively. My original concept, design, coding and copy.
 
@@ -19,9 +20,10 @@ Desktop home page (the theme switches to a dark background during certain times 
 
 {{< figure src="images/mitime/home-desktop.png" width="800" class="image" >}}
 
-## M. E. Mills (in development)
+## M. E. Mills
  
-[memills.com](http://memills.com)
+[memills.com](http://memills.com)<br>
+https://github.com/ajs17/memills
 
 My original historical research into the family of Edward H. Mills of Brooktondale New York. My design, coding and copy.
 
@@ -59,8 +61,8 @@ Smith and Mason products were sold at Narrative Space in Ithaca, New York and Go
 {{< figure src="images/sm/goat-boy.jpg" width="800" class="image" >}}
 
 <div class="cols">
-    {{< figure src="images/sm/narrative-space.jpg" width="390" class="image" >}}
-    {{< figure src="images/sm/narrative-space2.jpg" width="390" class="image" >}}
+    {{< figure src="images/sm/narrative-space.jpg" width="350" class="image" >}}
+    {{< figure src="images/sm/narrative-space2.jpg" width="350" class="image" >}}
 </div>
 
 <br/>
@@ -88,9 +90,9 @@ Self-hosted, responsive Wordpress site using custom plugins for location and eve
 Over 100,000 copies printed annually and distributed throughout the region and beyond. The 2014-2015 edition won the CTM Media Group's 2015 Regional Best Brochure Award. The design of the 2015-2016 edition of the brochure was coordinated with the launch of a completely re-implemented website with an updated responsive design (migrating from Drupal to Wordpress) as well as the introduction of an updated Beer Trail logo that same year. 
 
 <div class="cols">
-    {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="250" class="image" >}} 
-    {{< figure src="images/beer-trail/beer-trail-map-2015-2016.jpg" width="250" class="image" >}} 
-    {{< figure src="images/beer-trail/beer-trail-map-2016-2017.jpg" width="250" class="image" >}}
+    {{< figure src="images/beer-trail/beer-trail-map-2014-2015.jpg" width="200" class="image" >}} 
+    {{< figure src="images/beer-trail/beer-trail-map-2015-2016.jpg" width="200" class="image" >}} 
+    {{< figure src="images/beer-trail/beer-trail-map-2016-2017.jpg" width="200" class="image" >}}
 </div>
 
 <br/>
@@ -98,7 +100,7 @@ Over 100,000 copies printed annually and distributed throughout the region and b
 ### Other selected promotions
 
 <div class="cols">
-    {{< figure src="images/beer-trail/craft-beer-week.jpg" width="390" class="image" >}} 
-    {{< figure src="images/beer-trail/passport.jpg" width="390" class="image" >}} 
+    {{< figure src="images/beer-trail/craft-beer-week.jpg" width="350" class="image" >}} 
+    {{< figure src="images/beer-trail/passport.jpg" width="350" class="image" >}} 
 </div>
 
