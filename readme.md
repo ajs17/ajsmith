@@ -1,7 +1,7 @@
 
 ![ajsmith.co logo](/static/images/temp/ajsmith2.svg)
 
-A [Hugo](https://gohugo.io/) based site hosted on Github Pages and available at 
+A [Hugo](https://gohugo.io/) based site hosted on Github Pages and available at https://ajsmith.co .
 
 ![ajsmith.co screenshot](/static/images/screenshot.png)
 
