@@ -1,7 +1,6 @@
-baseURL = "https://ajsmith.co"
+baseURL = "https://ajsmith.co/"
 languageCode = "en-us"
 title = "a j smith"
-
 publishDir = "docs" 
 enableGitInfo = true
 footnoteReturnLinkContents = "↩"
@@ -11,10 +10,9 @@ lastmod = [":fileModTime", ":default"] # auto populates lastmod date
   tag = "tags"
 
 [params]
-  ImageMaxWidth = "800"
+  _merge = "deep"
   analyticsid = ""
   additionalmetatags = "<meta name=\"msvalidate.01\" content=\"\" />" 
-  humanDateFormat = "Monday 02 Jan 2006"
   contactformEndpoint = "https://submit-form.com/TMzsthUG"
   contactformAdditionalCode= "<input type=\"hidden\" name=\"_redirect\" value=\"https://ajsmith.co/thankyou\"/>"
   botpoisonPublicKey = "pk_ceb1f068-0be7-467b-b9c5-3c722f2d4627" 
@@ -23,31 +21,9 @@ lastmod = [":fileModTime", ":default"] # auto populates lastmod date
 
 # theming and reusable code
 [module]
+  _merge = "deep"
   [[module.imports]]
     path = "github.com/ajs17/hugo-min-components"
  
 [markup]
-  defaultMarkdownHandler = "goldmark"
-  [markup.goldmark]
-    [markup.goldmark.extensions]
-      definitionList = true
-      footnote = true
-      linkify = true
-      strikethrough = true
-      table = true
-      taskList = true
-      typographer = true
-    [markup.goldmark.parser]
-      autoHeadingID = true
-      autoHeadingIDType = "github"
-      [markup.goldmark.parser.attribute]
-        block = false
-        title = true
-    [markup.goldmark.renderer]
-      hardWraps = false
-      unsafe = true
-      xhtml = false
-  [markup.tableOfContents]
-    endLevel = 2
-    ordered = false
-    startLevel = 2
+  _merge = "deep"
