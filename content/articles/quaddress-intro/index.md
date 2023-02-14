@@ -24,14 +24,14 @@ My approach is to use a simple addressing system that can be applied uniformly r
 Beginning with the negative use case: if a derivative represents the entire area of the original, its quaddress is "0". To specify an area within the document, simply divide the current division into quadrants, beginning with the entire area: 
 
 <figure class="image"> 
-{{< inline-svg "/img/quaddress/1d-grid.svg" >}}
+{{% inline-svg "1d-grid.svg" %}}
 <figcaption></figcaption>
 </figure> 
 
 As greater specificity is needed, divide each quadrant in the current/highest division into additional quadrants, thus creating a new current/highest division:
 
 <figure class="image"> 
-{{< inline-svg "/img/quaddress/2d-grid.svg" >}}
+{{< inline-svg "2d-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
@@ -42,8 +42,9 @@ This approach provides a clear and consistent method for achieving greater speci
 <pre><code>
 image.quaddress = "43";
 </code></pre>
+
 <figure class="image"> 
-{{< inline-svg "/img/quaddress/2d-43-grid.svg" >}}
+{{< inline-svg "2d-43-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
@@ -84,14 +85,14 @@ And similarly, different grids can be applied to derivatives as well, such as sp
 Obviously, many originals will not be perfectly square, and it is important to remember that this approach is purposely an abstraction of a map, and a map is never the territory. To interpret a quaddress against say, an 11x17 sheet a paper, the consumer can easily make the adjustment because division by quadrants only requires accurately judging the approximate midpoints along an X and Y axis for an area, something that is very natural for everyone.
 
 <figure class="image"> 
-{{< inline-svg "/img/quaddress/2d-stretched-grid.svg" >}}
+{{< inline-svg "2d-stretched-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
 The same can be said of non-rectilinear originals. As long as the grid is imagined to be the same maximum width and maximum height of the original, the approach works, as again, using human judgement to apply the mapping is easily understood by anyone. 
 
 <figure class="image"> 
-{{< inline-svg "/img/quaddress/2d-irregular-grid.svg" >}}
+{{< inline-svg "2d-irregular-grid.svg" >}}
 <figcaption></figcaption>
 </figure> 
 
