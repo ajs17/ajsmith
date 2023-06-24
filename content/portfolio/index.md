@@ -23,7 +23,7 @@ Desktop home page (the theme switches to a dark background during certain times 
 ## M. E. Mills
  
 [memills.com](http://memills.com)<br>
-https://github.com/ajs17/memills
+https://github.com/ajs17/memills-ng
 
 My original historical research into the family of Edward H. Mills of Brooktondale New York. My design, coding and copy.
 
